@@ -23,6 +23,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[self view] setBackgroundColor:[UIColor blackColor]];
+    
+    UIImage *image = [UIImage imageNamed:@"cabin.jpg"];
+    
+    currentImage = image;
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    
+    CGRect imageFrame = [[self view] frame];
+    
+    [imageView setFrame: imageFrame];
+    
+    [imageView setContentMode:UIViewContentModeScaleAspectFit];
+    
+    [[self view] addSubview:imageView];
 }
 
 - (void)viewDidUnload
@@ -40,10 +56,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    UIImage *image = [UIImage imageWithContentsOfFile:@"cabin.jpg"];
-    
-    [self displayEditorForImage:image];
+            
+    [self displayEditorForImage:currentImage];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -73,6 +87,20 @@
     AFPhotoEditorController *editorController = [[AFPhotoEditorController alloc] initWithImage:imageToEdit];
     [editorController setDelegate:(id)self];
     [self presentModalViewController:editorController animated:YES];
+}
+
+- (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
+{
+    currentImage = image;
+    
+    [[[[self view] subviews] objectAtIndex:0] setImage:currentImage];
+    
+    [[self modalViewController] dismissModalViewControllerAnimated:YES];
+}
+
+- (void)photoEditorCanceled:(AFPhotoEditorController *)editor
+{
+    [[self modalViewController] dismissModalViewControllerAnimated:YES];
 }
 
 @end

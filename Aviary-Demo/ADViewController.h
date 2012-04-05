@@ -10,5 +10,7 @@
 #import "AFPhotoEditorController.h"
 
 @interface ADViewController : UIViewController
-- (void)displayEditorForImage:(UIImage *)imageToEdit;
+    - (void)displayEditorForImage:(UIImage *)imageToEdit;
 @end
+
+UIImage *currentImage;
