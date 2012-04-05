@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5CE3690152D249C00372B8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE368F152D249C00372B8D /* UIKit.framework */; };
+		A5CE3692152D249C00372B8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE3691152D249C00372B8D /* Foundation.framework */; };
+		A5CE3694152D249C00372B8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE3693152D249C00372B8D /* CoreGraphics.framework */; };
+		A5CE369A152D249C00372B8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5CE3698152D249C00372B8D /* InfoPlist.strings */; };
+		A5CE369C152D249C00372B8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE369B152D249C00372B8D /* main.m */; };
+		A5CE36A0152D249C00372B8D /* ADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE369F152D249C00372B8D /* ADAppDelegate.m */; };
+		A5CE36A3152D249C00372B8D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CE36A1152D249C00372B8D /* MainStoryboard_iPhone.storyboard */; };
+		A5CE36A6152D249C00372B8D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CE36A4152D249C00372B8D /* MainStoryboard_iPad.storyboard */; };
+		A5CE36A9152D249C00372B8D /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE36A8152D249C00372B8D /* ADViewController.m */; };
+		A5CE36B1152D249D00372B8D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE36B0152D249D00372B8D /* SenTestingKit.framework */; };
+		A5CE36B2152D249D00372B8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE368F152D249C00372B8D /* UIKit.framework */; };
+		A5CE36B3152D249D00372B8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CE3691152D249C00372B8D /* Foundation.framework */; };
+		A5CE36BB152D249D00372B8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5CE36B9152D249D00372B8D /* InfoPlist.strings */; };
+		A5CE36BE152D249D00372B8D /* Aviary_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CE36BD152D249D00372B8D /* Aviary_DemoTests.m */; };
+		A5D1EC22152D25EF00AF0823 /* libAviarySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1EC1F152D25EF00AF0823 /* libAviarySDK.a */; };
+		A5D1EC23152D25EF00AF0823 /* AviarySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5D1EC21152D25EF00AF0823 /* AviarySDKResources.bundle */; };
+		A5D1EC25152D263200AF0823 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1EC24152D263200AF0823 /* QuartzCore.framework */; };
+		A5D1EC27152D264400AF0823 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1EC26152D264400AF0823 /* Accelerate.framework */; };
+		A5D1EC29152D265200AF0823 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1EC28152D265200AF0823 /* StoreKit.framework */; };
+		A5D1EC2B152D266D00AF0823 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1EC2A152D266D00AF0823 /* libz.1.2.5.dylib */; };
+		A5D1EC2D152D26A700AF0823 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1EC2C152D26A700AF0823 /* libsqlite3.0.dylib */; };
+		A5D1EC2F152D26C600AF0823 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1EC2E152D26C600AF0823 /* CoreData.framework */; };
+		A5D1EC31152D28DE00AF0823 /* cabin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5D1EC30152D28DE00AF0823 /* cabin.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5CE36B4152D249D00372B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CE3682152D249C00372B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CE368A152D249C00372B8D;
+			remoteInfo = "Aviary-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5CE368B152D249C00372B8D /* Aviary-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aviary-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CE368F152D249C00372B8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5CE3691152D249C00372B8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5CE3693152D249C00372B8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5CE3697152D249C00372B8D /* Aviary-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Aviary-Demo-Info.plist"; sourceTree = "<group>"; };
+		A5CE3699152D249C00372B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5CE369B152D249C00372B8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5CE369D152D249C00372B8D /* Aviary-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aviary-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		A5CE369E152D249C00372B8D /* ADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADAppDelegate.h; sourceTree = "<group>"; };
+		A5CE369F152D249C00372B8D /* ADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADAppDelegate.m; sourceTree = "<group>"; };
+		A5CE36A2152D249C00372B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		A5CE36A5152D249C00372B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		A5CE36A7152D249C00372B8D /* ADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADViewController.h; sourceTree = "<group>"; };
+		A5CE36A8152D249C00372B8D /* ADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADViewController.m; sourceTree = "<group>"; };
+		A5CE36AF152D249D00372B8D /* Aviary-DemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aviary-DemoTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CE36B0152D249D00372B8D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5CE36B8152D249D00372B8D /* Aviary-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Aviary-DemoTests-Info.plist"; sourceTree = "<group>"; };
+		A5CE36BA152D249D00372B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5CE36BC152D249D00372B8D /* Aviary_DemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aviary_DemoTests.h; sourceTree = "<group>"; };
+		A5CE36BD152D249D00372B8D /* Aviary_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aviary_DemoTests.m; sourceTree = "<group>"; };
+		A5D1EC1A152D25EF00AF0823 /* AFPhotoEditorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorContext.h; sourceTree = "<group>"; };
+		A5D1EC1B152D25EF00AF0823 /* AFPhotoEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorController.h; sourceTree = "<group>"; };
+		A5D1EC1C152D25EF00AF0823 /* AFPhotoEditorControllerOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorControllerOptions.h; sourceTree = "<group>"; };
+		A5D1EC1D152D25EF00AF0823 /* AFPhotoEditorSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorSession.h; sourceTree = "<group>"; };
+		A5D1EC1E152D25EF00AF0823 /* AFPhotoEditorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorStyle.h; sourceTree = "<group>"; };
+		A5D1EC1F152D25EF00AF0823 /* libAviarySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviarySDK.a; sourceTree = "<group>"; };
+		A5D1EC21152D25EF00AF0823 /* AviarySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AviarySDKResources.bundle; sourceTree = "<group>"; };
+		A5D1EC24152D263200AF0823 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A5D1EC26152D264400AF0823 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A5D1EC28152D265200AF0823 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A5D1EC2A152D266D00AF0823 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		A5D1EC2C152D26A700AF0823 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A5D1EC2E152D26C600AF0823 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A5D1EC30152D28DE00AF0823 /* cabin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabin.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5CE3688152D249C00372B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D1EC2F152D26C600AF0823 /* CoreData.framework in Frameworks */,
+				A5D1EC2D152D26A700AF0823 /* libsqlite3.0.dylib in Frameworks */,
+				A5D1EC2B152D266D00AF0823 /* libz.1.2.5.dylib in Frameworks */,
+				A5D1EC29152D265200AF0823 /* StoreKit.framework in Frameworks */,
+				A5D1EC27152D264400AF0823 /* Accelerate.framework in Frameworks */,
+				A5D1EC25152D263200AF0823 /* QuartzCore.framework in Frameworks */,
+				A5CE3690152D249C00372B8D /* UIKit.framework in Frameworks */,
+				A5CE3692152D249C00372B8D /* Foundation.framework in Frameworks */,
+				A5CE3694152D249C00372B8D /* CoreGraphics.framework in Frameworks */,
+				A5D1EC22152D25EF00AF0823 /* libAviarySDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CE36AB152D249D00372B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE36B1152D249D00372B8D /* SenTestingKit.framework in Frameworks */,
+				A5CE36B2152D249D00372B8D /* UIKit.framework in Frameworks */,
+				A5CE36B3152D249D00372B8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5CE3680152D249C00372B8D = {
+			isa = PBXGroup;
+			children = (
+				A5D1EC2E152D26C600AF0823 /* CoreData.framework */,
+				A5D1EC2C152D26A700AF0823 /* libsqlite3.0.dylib */,
+				A5D1EC2A152D266D00AF0823 /* libz.1.2.5.dylib */,
+				A5D1EC28152D265200AF0823 /* StoreKit.framework */,
+				A5D1EC26152D264400AF0823 /* Accelerate.framework */,
+				A5D1EC24152D263200AF0823 /* QuartzCore.framework */,
+				A5D1EC32152D28E800AF0823 /* Images */,
+				A5D1EC18152D25EF00AF0823 /* AviarySDK */,
+				A5CE3695152D249C00372B8D /* Aviary-Demo */,
+				A5CE36B6152D249D00372B8D /* Aviary-DemoTests */,
+				A5CE368E152D249C00372B8D /* Frameworks */,
+				A5CE368C152D249C00372B8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5CE368C152D249C00372B8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE368B152D249C00372B8D /* Aviary-Demo.app */,
+				A5CE36AF152D249D00372B8D /* Aviary-DemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5CE368E152D249C00372B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE368F152D249C00372B8D /* UIKit.framework */,
+				A5CE3691152D249C00372B8D /* Foundation.framework */,
+				A5CE3693152D249C00372B8D /* CoreGraphics.framework */,
+				A5CE36B0152D249D00372B8D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5CE3695152D249C00372B8D /* Aviary-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE369E152D249C00372B8D /* ADAppDelegate.h */,
+				A5CE369F152D249C00372B8D /* ADAppDelegate.m */,
+				A5CE36A1152D249C00372B8D /* MainStoryboard_iPhone.storyboard */,
+				A5CE36A4152D249C00372B8D /* MainStoryboard_iPad.storyboard */,
+				A5CE36A7152D249C00372B8D /* ADViewController.h */,
+				A5CE36A8152D249C00372B8D /* ADViewController.m */,
+				A5CE3696152D249C00372B8D /* Supporting Files */,
+			);
+			path = "Aviary-Demo";
+			sourceTree = "<group>";
+		};
+		A5CE3696152D249C00372B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE3697152D249C00372B8D /* Aviary-Demo-Info.plist */,
+				A5CE3698152D249C00372B8D /* InfoPlist.strings */,
+				A5CE369B152D249C00372B8D /* main.m */,
+				A5CE369D152D249C00372B8D /* Aviary-Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5CE36B6152D249D00372B8D /* Aviary-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE36BC152D249D00372B8D /* Aviary_DemoTests.h */,
+				A5CE36BD152D249D00372B8D /* Aviary_DemoTests.m */,
+				A5CE36B7152D249D00372B8D /* Supporting Files */,
+			);
+			path = "Aviary-DemoTests";
+			sourceTree = "<group>";
+		};
+		A5CE36B7152D249D00372B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5CE36B8152D249D00372B8D /* Aviary-DemoTests-Info.plist */,
+				A5CE36B9152D249D00372B8D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5D1EC18152D25EF00AF0823 /* AviarySDK */ = {
+			isa = PBXGroup;
+			children = (
+				A5D1EC19152D25EF00AF0823 /* Headers */,
+				A5D1EC1F152D25EF00AF0823 /* libAviarySDK.a */,
+				A5D1EC20152D25EF00AF0823 /* Resources */,
+			);
+			path = AviarySDK;
+			sourceTree = "<group>";
+		};
+		A5D1EC19152D25EF00AF0823 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A5D1EC1A152D25EF00AF0823 /* AFPhotoEditorContext.h */,
+				A5D1EC1B152D25EF00AF0823 /* AFPhotoEditorController.h */,
+				A5D1EC1C152D25EF00AF0823 /* AFPhotoEditorControllerOptions.h */,
+				A5D1EC1D152D25EF00AF0823 /* AFPhotoEditorSession.h */,
+				A5D1EC1E152D25EF00AF0823 /* AFPhotoEditorStyle.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		A5D1EC20152D25EF00AF0823 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5D1EC21152D25EF00AF0823 /* AviarySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5D1EC32152D28E800AF0823 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A5D1EC30152D28DE00AF0823 /* cabin.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5CE368A152D249C00372B8D /* Aviary-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CE36C1152D249D00372B8D /* Build configuration list for PBXNativeTarget "Aviary-Demo" */;
+			buildPhases = (
+				A5CE3687152D249C00372B8D /* Sources */,
+				A5CE3688152D249C00372B8D /* Frameworks */,
+				A5CE3689152D249C00372B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aviary-Demo";
+			productName = "Aviary-Demo";
+			productReference = A5CE368B152D249C00372B8D /* Aviary-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5CE36AE152D249D00372B8D /* Aviary-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CE36C4152D249D00372B8D /* Build configuration list for PBXNativeTarget "Aviary-DemoTests" */;
+			buildPhases = (
+				A5CE36AA152D249D00372B8D /* Sources */,
+				A5CE36AB152D249D00372B8D /* Frameworks */,
+				A5CE36AC152D249D00372B8D /* Resources */,
+				A5CE36AD152D249D00372B8D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5CE36B5152D249D00372B8D /* PBXTargetDependency */,
+			);
+			name = "Aviary-DemoTests";
+			productName = "Aviary-DemoTests";
+			productReference = A5CE36AF152D249D00372B8D /* Aviary-DemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5CE3682152D249C00372B8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "colordeaf ltd";
+			};
+			buildConfigurationList = A5CE3685152D249C00372B8D /* Build configuration list for PBXProject "Aviary-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5CE3680152D249C00372B8D;
+			productRefGroup = A5CE368C152D249C00372B8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5CE368A152D249C00372B8D /* Aviary-Demo */,
+				A5CE36AE152D249D00372B8D /* Aviary-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5CE3689152D249C00372B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE369A152D249C00372B8D /* InfoPlist.strings in Resources */,
+				A5CE36A3152D249C00372B8D /* MainStoryboard_iPhone.storyboard in Resources */,
+				A5CE36A6152D249C00372B8D /* MainStoryboard_iPad.storyboard in Resources */,
+				A5D1EC23152D25EF00AF0823 /* AviarySDKResources.bundle in Resources */,
+				A5D1EC31152D28DE00AF0823 /* cabin.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CE36AC152D249D00372B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE36BB152D249D00372B8D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5CE36AD152D249D00372B8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5CE3687152D249C00372B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE369C152D249C00372B8D /* main.m in Sources */,
+				A5CE36A0152D249C00372B8D /* ADAppDelegate.m in Sources */,
+				A5CE36A9152D249C00372B8D /* ADViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CE36AA152D249D00372B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CE36BE152D249D00372B8D /* Aviary_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5CE36B5152D249D00372B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CE368A152D249C00372B8D /* Aviary-Demo */;
+			targetProxy = A5CE36B4152D249D00372B8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5CE3698152D249C00372B8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5CE3699152D249C00372B8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5CE36A1152D249C00372B8D /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5CE36A2152D249C00372B8D /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A5CE36A4152D249C00372B8D /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5CE36A5152D249C00372B8D /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A5CE36B9152D249D00372B8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5CE36BA152D249D00372B8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5CE36BF152D249D00372B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5CE36C0152D249D00372B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5CE36C2152D249D00372B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aviary-Demo/Aviary-Demo-Prefix.pch";
+				INFOPLIST_FILE = "Aviary-Demo/Aviary-Demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AviarySDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-fobjc-arc",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5CE36C3152D249D00372B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aviary-Demo/Aviary-Demo-Prefix.pch";
+				INFOPLIST_FILE = "Aviary-Demo/Aviary-Demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AviarySDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-fobjc-arc",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A5CE36C5152D249D00372B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Aviary-Demo.app/Aviary-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aviary-Demo/Aviary-Demo-Prefix.pch";
+				INFOPLIST_FILE = "Aviary-DemoTests/Aviary-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A5CE36C6152D249D00372B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Aviary-Demo.app/Aviary-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Aviary-Demo/Aviary-Demo-Prefix.pch";
+				INFOPLIST_FILE = "Aviary-DemoTests/Aviary-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5CE3685152D249C00372B8D /* Build configuration list for PBXProject "Aviary-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CE36BF152D249D00372B8D /* Debug */,
+				A5CE36C0152D249D00372B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CE36C1152D249D00372B8D /* Build configuration list for PBXNativeTarget "Aviary-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CE36C2152D249D00372B8D /* Debug */,
+				A5CE36C3152D249D00372B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CE36C4152D249D00372B8D /* Build configuration list for PBXNativeTarget "Aviary-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CE36C5152D249D00372B8D /* Debug */,
+				A5CE36C6152D249D00372B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5CE3682152D249C00372B8D /* Project object */;
+}
