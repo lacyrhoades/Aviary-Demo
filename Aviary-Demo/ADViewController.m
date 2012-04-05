@@ -28,8 +28,6 @@
     
     UIImage *image = [UIImage imageNamed:@"cabin.jpg"];
     
-    currentImage = image;
-    
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     
     CGRect imageFrame = [[self view] frame];
@@ -57,7 +55,9 @@
 {
     [super viewDidAppear:animated];
             
-    [self displayEditorForImage:currentImage];
+    UIImage *image = [[[[self view] subviews] objectAtIndex:0] image];
+    
+    [self displayEditorForImage:image];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -87,15 +87,23 @@
     AFPhotoEditorController *editorController = [[AFPhotoEditorController alloc] initWithImage:imageToEdit];
     [editorController setDelegate:(id)self];
     [self presentModalViewController:editorController animated:YES];
+    
+    currentSession = [editorController session];
 }
 
 - (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
 {
-    currentImage = image;
-    
-    [[[[self view] subviews] objectAtIndex:0] setImage:currentImage];
-    
     [[self modalViewController] dismissModalViewControllerAnimated:YES];
+    
+    AFPhotoEditorContext *context = [currentSession createContextWithSize:CGSizeMake(1000, 1000)];
+    
+    UIImage *bgImage = [[[[self view] subviews] objectAtIndex:0] image];
+    
+    [context renderInputImage:bgImage completion:^(UIImage *result) {
+        if (result != nil) {
+            [[[[self view] subviews] objectAtIndex:0] setImage: result];
+        }
+    }];
 }
 
 - (void)photoEditorCanceled:(AFPhotoEditorController *)editor

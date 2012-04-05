@@ -13,4 +13,4 @@
     - (void)displayEditorForImage:(UIImage *)imageToEdit;
 @end
 
-UIImage *currentImage;
+AFPhotoEditorSession *currentSession;
